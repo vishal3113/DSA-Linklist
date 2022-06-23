@@ -27,6 +27,19 @@ public class Circular_Linklist {
         tail=newNode;
         tail.next=head;
     }
+    // Delete A Node from the last position in a linklist
+
+    public void Delete_last()
+    {
+        Node temp=head;
+        Node last=tail;
+        do{
+            temp=temp.next;
+        }while(temp.next!=last);
+
+        tail=temp;
+        tail.next=head;
+    }
 
     public void Traversal(){
         Node currentNode=head;
@@ -53,6 +66,8 @@ public class Circular_Linklist {
         obj.insertFirst(3);
         obj.insertFirst(2);
         obj.insertFirst(1);
+        
+        obj.Delete_last();
         obj.Traversal();
     }
     
