@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 public class Single_Linklist{
     // Class of Node
     static class Node{
@@ -10,7 +9,7 @@ public class Single_Linklist{
         Node(int data)
         {
             this.data=data;
-            this.next=null;
+            this.next=null; 
         }
     }
     // Head Node assigned to Null
@@ -21,7 +20,7 @@ public class Single_Linklist{
         Node newNode=new Node(data);
         if(head==null){
             head=newNode;
-            return;
+          
         }
         //Main conditoin if The Linklist is not null
         newNode.next=head;
@@ -39,7 +38,7 @@ public class Single_Linklist{
         }
         else
         {
-            while(currentNode!=null){
+            while(currentNode.next!=null){
                 System.out.print(currentNode.data+"-");
                 currentNode=currentNode.next;
             }
@@ -57,6 +56,4 @@ public static void main(String args[])
         obj.insertFirst(3);
         obj.Traversal();
     }
-
-
 }
