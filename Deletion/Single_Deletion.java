@@ -60,6 +60,7 @@ public class Single_Deletion {
             }
 
             // 2nd Method
+            // .Code
             // Node CurrentNode=head;
             // Node SecondNode=head.next;
 
